@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+
+# The first function, makeVector creates a special "matrix", which is really a list containing a function to
+# set the value of the vector
+# get the value of the vector
+# set the value of the mean
+# get the value of the mean
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+# The following function calculates the mean of the special "matrix" created with the above function. 
+# Firstly it checks to see if the mean has already been calculated and if it has it gets the mean from the cache and skips the computation. 
+# eElse it calculates the mean of the data and sets the value of the mean in the cache with aid of the above function.
 
 cacheSolve <- function(x, ...) {
   m <- x$solve_matrix()
